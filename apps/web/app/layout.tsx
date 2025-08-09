@@ -1,9 +1,12 @@
-import "@ping/ui/globals.css"
+import "./globals.css"
 
 import { type Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import { ClerkProvider } from "@clerk/nextjs"
+import { shadcn } from "@clerk/themes"
 
 import { Providers } from "@ping/ui/providers"
+import { ConvexClientProvider } from "@/components/convex-provider"
 
 export const metadata: Metadata = {
   title: "Ping"
@@ -29,7 +32,11 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}
       >
-        <Providers>{children}</Providers>
+        <ClerkProvider appearance={{ baseTheme: shadcn }}>
+          <ConvexClientProvider>
+            <Providers>{children}</Providers>
+          </ConvexClientProvider>
+        </ClerkProvider>
       </body>
     </html>
   )
