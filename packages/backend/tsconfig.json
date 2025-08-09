@@ -1,0 +1,11 @@
+{
+  "extends": "@ping/typescript-config/backend.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./convex/*"]
+    }
+  },
+  "include": ["./convex/**/*"],
+  "exclude": ["node_modules", "./convex/_generated"]
+}

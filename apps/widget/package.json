@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@ping/ui": "workspace:*",
+    "@ping/backend": "workspace:*",
+    "convex": "^1.25.4",
     "lucide-react": "^0.475.0",
     "next": "^15.4.5",
     "next-themes": "^0.4.6",
@@ -20,11 +22,12 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "@ping/eslint-config": "workspace:*",
+    "@ping/typescript-config": "workspace:*",
     "@types/node": "^20.19.9",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
-    "@ping/eslint-config": "workspace:*",
-    "@ping/typescript-config": "workspace:*",
+    "eslint": "^9.32.0",
     "typescript": "^5.9.2"
   }
 }
