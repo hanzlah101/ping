@@ -4,6 +4,7 @@ import { type Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 
 import { Providers } from "@ping/ui/providers"
+import { ConvexClientProvider } from "@/components/convex-provider"
 
 export const metadata: Metadata = {
   title: "Ping"
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}
       >
-        <Providers>{children}</Providers>
+        <ConvexClientProvider>
+          <Providers>{children}</Providers>
+        </ConvexClientProvider>
       </body>
     </html>
   )

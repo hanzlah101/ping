@@ -7,7 +7,10 @@
     "lint": "eslint convex/ --no-warn-ignored"
   },
   "exports": {
-    ".": "./convex/_generated/api.js",
+    ".": {
+      "types": "./convex/_generated/api.d.ts",
+      "default": "./convex/_generated/api.js"
+    },
     "./types": "./convex/_generated/dataModel.d.ts"
   },
   "dependencies": {
@@ -16,7 +19,8 @@
   "devDependencies": {
     "@ping/eslint-config": "workspace:*",
     "@ping/typescript-config": "workspace:*",
-    "typescript": "latest",
-    "eslint": "^9.32.0"
+    "typescript": "^5.9.2",
+    "eslint": "^9.32.0",
+    "@types/node": "^20.19.9"
   }
 }
