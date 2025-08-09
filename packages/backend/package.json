@@ -1,0 +1,22 @@
+{
+  "name": "@ping/backend",
+  "type": "module",
+  "scripts": {
+    "dev": "convex dev",
+    "setup": "convex dev --until-success",
+    "lint": "eslint convex/ --no-warn-ignored"
+  },
+  "exports": {
+    ".": "./convex/_generated/api.js",
+    "./types": "./convex/_generated/dataModel.d.ts"
+  },
+  "dependencies": {
+    "convex": "^1.25.4"
+  },
+  "devDependencies": {
+    "@ping/eslint-config": "workspace:*",
+    "@ping/typescript-config": "workspace:*",
+    "typescript": "latest",
+    "eslint": "^9.32.0"
+  }
+}

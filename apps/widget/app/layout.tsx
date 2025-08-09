@@ -1,7 +1,13 @@
+import "@ping/ui/globals.css"
+
+import { type Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 
-import "@ping/ui/globals.css"
-import { Providers } from "@/components/providers"
+import { Providers } from "@ping/ui/providers"
+
+export const metadata: Metadata = {
+  title: "Ping"
+}
 
 const fontSans = Geist({
   subsets: ["latin"],
