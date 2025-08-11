@@ -17,8 +17,8 @@
     "@ping/backend": "workspace:*",
     "@ping/ui": "workspace:*",
     "convex": "^1.25.4",
-    "lucide-react": "^0.475.0",
-    "next": "^15.4.5",
+    "lucide-react": "^0.539.0",
+    "next": "^15.4.6",
     "next-themes": "^0.4.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
