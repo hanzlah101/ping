@@ -2,7 +2,6 @@
 const nextConfig = {
   transpilePackages: ["@ping/ui"],
   experimental: {
-    devtoolNewPanelUI: true,
     devtoolSegmentExplorer: true
   }
 }

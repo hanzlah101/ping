@@ -1,10 +1,9 @@
-import { OrganizationSwitcher, UserButton } from "@clerk/nextjs"
+import { UserButton } from "@clerk/nextjs"
 
 export default function Page() {
   return (
-    <div className="space-x-4 p-8">
+    <div>
       <UserButton />
-      <OrganizationSwitcher hidePersonal />
     </div>
   )
 }
