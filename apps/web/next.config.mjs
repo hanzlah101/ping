@@ -3,7 +3,6 @@ import { withSentryConfig } from "@sentry/nextjs"
 const nextConfig = {
   transpilePackages: ["@ping/ui"],
   experimental: {
-    devtoolNewPanelUI: true,
     devtoolSegmentExplorer: true
   }
 }
