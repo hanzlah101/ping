@@ -7,10 +7,7 @@
     "lint": "eslint convex/ --no-warn-ignored"
   },
   "exports": {
-    ".": {
-      "types": "./convex/_generated/api.d.ts",
-      "default": "./convex/_generated/api.js"
-    },
+    ".": "./convex/_generated/api.js",
     "./types": "./convex/_generated/dataModel.d.ts"
   },
   "dependencies": {
